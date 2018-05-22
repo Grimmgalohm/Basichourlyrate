@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Basic Hourly Rate</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <main>
+        <form>
+
+          <section>
+            <div>
+            <h1>Calculadora de presupuesto por hora</h1>
+            <cite>*Todos los gastos son mensuales</cite>
+              <br/>
+              <button class="comenzar">Comenzar</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Horas a trabajar en el día</label>
+              <input type="number" name="horas">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Días de trabajo a la semana</label>
+              <input type="number" name="ds">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Gastos de vivienda</label>
+              <input type="number" name="gvivienda">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Gastos de luz</label>
+              <input type="number" name="gluz">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Gastos de teléfono e internet</label>
+              <input type="number" name="gtei">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Gastos de comida</label>
+              <input type="number" name="gc">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Gastos de teléfono celular</label>
+              <input type="number" name="gtc">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Gastos de transporte</label>
+              <input type="number" name="gt">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Gastos de entretenimiento</label>
+              <input type="number" name="ge">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Porcentaje de ganacia</label>
+              <input type="number" name="porcentajeganancia">
+              <br />
+              <button class="siguiente">Siguiente</button>
+            </div>
+          </section>
+
+          <section>
+            <div>
+              <label>Porcentaje de jubilación</label>
+              <input type="number" name="porcentajejubil">
+              <br />
+              <button class="calcular">Calcular</button>
+            </div>  
+          </section>
+
+          <section>
+            <div>
+              <h2>Gastos Totales <span class="totales"></span></h2>
+              <h2>Mínimo Ingreso Mensual <span class="mim"></span></h2>
+              <h1>Costo por hora <span class="cph"></span></h1>
+              <br />
+              <button class="reiniciar">Reiniciar</button>
+            </div>
+          </section>
+
+        </form>
+      </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
