@@ -1,1 +1,34 @@
-
+*{
+    font-family: 'Josefin Slab', serif;
+}
+section{
+    position: fixed;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    font-size: 150%;
+    text-align: center;
+    line-height: 100%;
+    margin-top: 15%;    
+}
+input{
+    margin-top: 5%;
+    width: 150px;
+    height: 50px;
+    color: black;
+    background: rgba(00, 80, 00, .5);
+    border: none;
+    border-radius: 15px;
+    align-content: center;
+    font-size: 150%;
+}
+button{
+    margin-top: 5%;
+    width: 150px;
+    height: 50px;
+    color: black;
+    background: green;
+    border: none;
+    border-radius: 15px;
+    font-size: 120%;
+}
