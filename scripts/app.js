@@ -49,13 +49,11 @@ calcular.addEventListener('click', function(e){
   var porcentajeganancia = form.porcentajeganan.value;
   var porcentajejubilacion = form.porcentajejubil.value;
 
-  var totalgastosmensuales = (gastosdevivienda + gastosdeluz + gastosteleinter + gastoscomida + gastostelefcel + gastostransporte + gastosentretenimiento);
-  var gastosmasganancia = (totalgastosmensuales + (totalgastosmensuales*(porcentajeganancia / 100)));
-  var mim = (gastosmasganancia + (gastosmasganancia*(porcentajejubilacion / 100)));
-  var totaldehoras = (horas * (diassemanales * 4));
-  var costoporhora = (mim / totaldehoras);
-
-  console.log(totalgastosmensuales, gastosmasganancia, mim, totaldehoras, costoporhora);
+  var totalgastosmensuales = +gastosdevivienda + +gastosdeluz + +gastosteleinter + +gastoscomida + +gastostelefcel + +gastostransporte + +gastosentretenimiento;
+  var gastosmasganancia = (+totalgastosmensuales + (+totalgastosmensuales*(+porcentajeganancia / 100)));
+  var mim = (+gastosmasganancia + (+gastosmasganancia*(+porcentajejubilacion / 100)));
+  var totaldehoras = (+horas * (+diassemanales * 4));
+  var costoporhora = (+mim / +totaldehoras);
 
   document.querySelector(".cph").innerHTML=costoporhora;
   document.querySelector(".mim").innerHTML=mim;
